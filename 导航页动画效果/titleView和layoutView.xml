@@ -1,0 +1,115 @@
+  <!-- *******************************************-->  
+ 
+ <!--titleView和layoutView -->    
+		
+        <!-- TitleView布局 标志图片  标题  箭头-->     
+        <RelativeLayout
+            android:id="@+id/find_business_hall_title"
+            android:layout_width="fill_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/business_hall_selector_normall"
+            android:orientation="horizontal" >
+
+			<!--标志图片--> 
+            <ImageView
+                android:id="@+id/business_img"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="25dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:padding="10dip"
+                android:src="@drawable/find_businesshall"
+                />
+				<!--  标题 大标题  说明文字 --> 
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_toRightOf="@id/business_img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+			    >
+			    <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="@dimen/introduction_font_size"
+	                android:focusableInTouchMode="false"
+	                android:text="查找营业厅"
+	                android:textColor="@android:color/black"
+	                
+	                />
+			    <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="11sp"
+	                android:focusableInTouchMode="false"
+	                android:text="查找离您最近的营业厅"
+	                android:textColor="@color/gray"
+	                />
+			</LinearLayout>
+			<!--   箭头图片--> 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows_right_normal"
+                />
+        </RelativeLayout>
+			<!-- layoutView布局  三个tv--> 
+        <LinearLayout
+            android:id="@+id/business_hall_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/introduction_submenu_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/doSomething1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="85dp"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:textSize="@dimen/introduction_font_size"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/black"
+                android:text="帮我找找附近的营业厅" />
+
+            <TextView
+                android:id="@+id/doSomething2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:textSize="@dimen/introduction_font_size"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/black"
+                android:layout_marginLeft="85dp"
+                android:text="离我最近的营业厅" />
+
+            <TextView
+                android:id="@+id/doSomething3"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/introduction_font_size"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/black"
+                android:layout_marginLeft="85dp"
+                android:text="查找营业厅" />
+        </LinearLayout>
+   <!-- *******************************************-->  
